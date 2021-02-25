@@ -1,5 +1,9 @@
+const Base = require('./lib/base');
+const Chat = require('./lib/chat');
+const Enterprise = require('./lib/enterprise');
 
 module.exports = {
-  ent: require('./ent'),
-  chat: require('./chat'),
+  Base,
+  Chat,
+  Enterprise,
 };

@@ -1,9 +1,11 @@
 const maimai = require('..');
 
-const chat = maimai.chat({
+const session = {
   u: '32120843',
-  access_token: '1.d993765eb97f9cda9ac84be6adbf0b4a',
-});
+  access_token: '1.d993765eb97f9cda9ac84be6adbf0b4a'
+};
+
+const chat = new maimai.Chat(session);
 
 chat.on('message', (who, message) => {
   cconsole.log('You have a new message from:', who, message);
@@ -21,6 +23,6 @@ chat.on('message', (who, message) => {
     console.log(dialog);
   }
 
-  const res2 = await chat.add_dlg('21983888', "hello");
+  const res2 = await chat.send('21983888', "hello");
   console.log(res2);
 })();
