@@ -2,7 +2,7 @@ const maimai = require('..');
 
 const session = {
   u: '32120843',
-  access_token: '1.d993765eb97f9cda9ac84be6adbf0b4a'
+  access_token: '1.6c99d4b6077db7bdd3a90894ac4854b4'
 };
 
 const chat = new maimai.Chat(session);
